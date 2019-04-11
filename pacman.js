@@ -174,4 +174,14 @@ function translate (x, y, array){
  return travel(startingPosition[0], startingPosition[1], directions)
 }
 
-  pacman('input.txt')
+ try
+
+ {
+   pacman('input.txt')
+ }
+
+ catch (e) {
+
+  return [-1, -1, 0]
+
+ }
